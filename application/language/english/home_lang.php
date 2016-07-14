@@ -1,0 +1,40 @@
+<?php
+$lang['home_discover_the_best_travel_accommodation'] = 'Discover the best vacation rentals';
+$lang['home_reach_your_destination'] = 'Where are you going?';
+$lang['home_checkin'] = 'Check In';
+$lang['home_checkout'] = 'Check Out';
+$lang['home_guest'] = 'Guests';
+$lang['home_search'] = 'Search';
+$lang['home_home'] = 'Home';
+$lang['home_search_and_discovery'] = 'Search and Explore';
+$lang['home_find_suitable_budget_style'] = 'Find accommodation that suits your budget and style.';
+$lang['home_contact_and_booking'] = 'Contact and Book';
+$lang['home_contact_homeowners_travel_confirmation_booking'] = 'Contact potential hosts, confirm travel dates and book securely.';
+$lang['home_travel_and_enjoy'] = 'Travel and Enjoy!';
+$lang['home_live_local_any_place_world'] = 'Live like a local anywhere in the world.';
+$lang['home_popular_destination'] = 'Trending Destinations';
+$lang['home_facilities_save_more'] = 'Value for money';
+$lang['home_stay_home_instead_of_local'] = 'Stay in a local home instead of an expensive hotel.';
+$lang['home_enjoy_more_space'] = 'Enjoy more space';
+$lang['home_cost_of_hotel_room_info'] = 'For the same cost as a hotel room, you can rent an entire home, which means you get access to more space.';
+$lang['home_experience_as_native_speaker'] = 'Live like a local';
+$lang['home_experience_life_with_trip'] = 'Experience local life for richer, more authentic travels.';
+$lang['home_absolute_safety'] = 'We\'re secure';
+$lang['home_system_secure_online_payment_info'] = 'We handle all payments for you using a secure online payment system. You can pay via credit card or PayPal.';
+$lang['home_like_home'] = 'Feel at home';
+$lang['home_comfortable_living'] = 'Enjoy the conveniences of home. Cook breakfast in your own kitchen, use the laundry facilities or Wi-Fi without extra costs.';
+$lang['home_many_choose'] = 'More choices';
+$lang['home_list_room'] = 'From private rooms to apartments, exotic villas or traditional homes, our list of accommodation is ever growing.';
+$lang['home_introduced_on'] = 'Introduced on';
+$lang['home_register'] = 'Register';
+$lang['home_login'] = 'Login';
+$lang['home_top_destinations'] = 'Top Destinations';
+$lang['home_company_info'] = 'Companny info';
+$lang['home_follow_us'] = 'Follow Us';
+$lang['home_secure_payment'] = 'Secure Payments';
+$lang['home_about_us'] = 'About us';
+$lang['home_contact'] = 'Contact';
+$lang['home_news'] = 'News';
+$lang['home_help'] = 'Helps';
+
+

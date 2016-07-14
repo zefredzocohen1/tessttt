@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hocphp.info</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="shortcut icon" href="images/icon.png" type="image/x-icon"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="crown/css/main.css" />
+<link rel="stylesheet" type="text/css" href="css/css.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
+
+<script type="text/javascript" src="./js/jquery/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+	<!-- Left side content -->
+	<div id="left_content">
+		<div id="leftSide">
+		    <!-- Account panel -->
+			<div class="sideProfile">
+				<a href="#" title="" class="profileFace">
+					<img width="40" src="images/user.png" />
+				</a>
+				<span>Xin chào: <strong>admin!</strong></span>
+				<span>Hoàng văn Tuyền</span>
+				<div class="clear"></div>
+			</div>
+			<div class="sidebarSep"></div>		    
+		    <!-- Left navigation -->
+			<div id="menu">
+				<ul class="nav">
+					<li class="home">
+						<a href="#" class="active" id="current">
+							<span>Bảng điều khiển</span>
+							<strong></strong>
+						</a>						
+					</li>
+					<li class="tran">
+						<a href="#collapse1" class="exp" data-toggle="collapse" >
+							<span>Quản lý bán hàng</span>
+							<strong>2</strong>
+						</a>
+						<ul class="sub collapse" id="collapse1">
+							<li>
+								<a href="admin/tran.html">Giao dịch</a>
+							</li>
+							<li>
+								<a href="admin/product_order.html">Đơn hàng sản phẩm</a>
+							</li>
+						</ul>		
+					</li>
+					<li class="product">
+						<a href="#collapse2" class="exp" data-toggle="collapse">
+							<span>Sản phẩm</span><strong>3</strong>
+						</a>
+						<ul class="sub collapse" id="collapse2">
+							<li>
+								<a href="admin/product.html">Sản phẩm</a>
+							</li>
+							<li>
+								<a href="admin/cat.html">Danh mục</a>
+							</li>
+							<li>
+								<a href="admin/comment.html">Phản hồi</a>
+							</li>
+						</ul>	
+					</li>
+					<li class="account">
+						<a href="#collapse3" class=" exp" data-toggle = "collapse">
+							<span>Tài khoản</span>
+							<strong>3</strong>
+						</a>
+						<ul class="sub collapse" id="collapse3">
+							<li >
+								<a href="admin/admin.html">Ban quản trị</a>
+							</li>
+							<li >
+								<a href="admin/admin_group.html">Nhóm quản trị</a>
+							</li>
+							<li >
+								<a href="admin/user.html">Thành viên</a>
+							</li>
+						</ul>		
+					</li>
+					<li class="account">
+						<a href="#collapse4" class=" exp" data-toggle = "collapse">
+							<span>Tài khoản</span>
+							<strong>3</strong>
+						</a>
+						<ul class="sub collapse" id="collapse4">
+							<li >
+								<a href="admin/admin.html">Ban quản trị</a>
+							</li>
+							<li >
+								<a href="admin/admin_group.html">Nhóm quản trị</a>
+							</li>
+							<li >
+								<a href="admin/user.html">Thành viên</a>
+							</li>
+						</ul>		
+					</li>
+					<li class="account">
+						<a href="#collapse5" class=" exp" data-toggle = "collapse">
+							<span>Tài khoản</span>
+							<strong>3</strong>
+						</a>
+						<ul class="sub collapse" id="collapse5">
+							<li >
+								<a href="admin/admin.html">Ban quản trị</a>
+							</li>
+							<li >
+								<a href="admin/admin_group.html">Nhóm quản trị</a>
+							</li>
+							<li >
+								<a href="admin/user.html">Thành viên</a>
+							</li>
+						</ul>		
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Right side -->
+	<div id="rightSide">
+		<div class="container-fluid">
+			<div class="row">
+			    <!-- Account panel top -->	
+				<div class="topNav">
+					<div class="wrapper clearfix col-md-12">
+						<div id="toggle-sidebar" class="visible-xs pull-left">
+							<button class="btn btn-default ">
+								<span class="glyphicon glyphicon-menu-hamburger"></span>
+							</button>
+						</div>
+						<div class="welcome hidden-xs">
+							<span>Xin chào: <b>admin!</b></span>
+						</div>
+						<div class="userNav">
+							<ul>
+								<li><a href="#" target="_blank">
+									<img style="margin-top:7px;" src="./images/icons/light/home.png" />
+									<span>Trang chủ</span>
+								</a></li>
+								<!-- Logout -->
+								<li><a href="#">
+									<img src="./images/icons/topnav/logout.png" alt="" />
+									<span>Đăng xuất</span>
+								</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			    <!-- Main content -->
+				
+				<!-- Title area -->
+				<div class="titleArea clearfix">
+					<div class="wrapper clearfix col-md-12">
+						<div class="pageTitle">
+							<h5>Sản phẩm</h5>
+							<span>Thêm mới sản phẩm</span>
+						</div>
+						<div class="horControlB menu_action">
+							<ul>
+								<li>
+									<a href="product/add.html">
+										<img src="images/icons/control/16/add.png" />
+										<span>Thêm mới</span>
+									</a>
+								</li>
+							
+								<li>
+									<a href="product/?feature=1.html">
+										<img src="images/icons/control/16/feature.png" />
+										<span>Tiêu biểu</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="product.html">
+										<img src="images/icons/control/16/list.png" />
+										<span>Danh sách</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="line"></div>
+
+				<!-- Message -->
+				<!-- Main content wrapper -->
+				<div class="wrapper col-md-12  clearfix content">
+					<form class="form" id="form" action="product/add.html" method="post" enctype="multipart/form-data">
+						<fieldset>
+							<div class="widget">
+							    <div class="title">
+									<img src="images/icons/dark/add.png" class="titleIcon" />
+									<h6>Thêm mới Sản phẩm</h6>
+								</div>								
+
+							    <ul class="tabs" role="tablist">
+					                <li  role="presentation" class="active">
+					                	<a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Thông tin chung</a>
+					                </li>
+					                <li  role="presentation" >
+					                	<a href="#tab2"  aria-controls="tab2" role="tab" data-toggle="tab">SEO Onpage</a>
+					                </li>
+					                <li  role="presentation" >
+					                	<a href="#tab3"  aria-controls="tab3" role="tab" data-toggle="tab">Bài viết</a>
+					                </li> 
+								</ul>
+								<div class="tab_container tab-content">
+								    <div id='tab1' class="tab_content pd0 tab-pane active" role="tabpanel">
+								        <div class="formRow">
+											<label class="formLeft" for="param_name">Tên:<span class="req">*</span></label>
+											<div class="formRight">
+												<span class="oneTwo"><input name="name" id="param_name" _autocheck="true" type="text" /></span>
+												<span name="name_autocheck" class="autocheck"></span>
+												<div name="name_error" class="clear error"></div>
+											</div>
+											<div class="clear"></div>
+										</div>
+
+										<div class="formRow">
+											<label class="formLeft">Hình ảnh:<span class="req">*</span></label>
+											<div class="formRight">
+												<div class="left"><input type="file"  id="image" name="image"  ></div>
+												<div name="image_error" class="clear error"></div>
+											</div>
+											<div class="clear"></div>
+										</div>
+
+										<div class="formRow">
+											<label class="formLeft">Ảnh kèm theo:</label>
+											<div class="formRight">
+												<div class="left"><input type="file"  id="image_list" name="image_list[]" multiple></div>
+												<div name="image_list_error" class="clear error"></div>
+											</div>
+											<div class="clear"></div>
+										</div>
+
+										<!-- Price -->
+										<div class="formRow">
+											<label class="formLeft" for="param_price">
+												Giá :
+												<span class="req">*</span>
+											</label>
+											<div class="formRight">
+												<span class="oneTwo">
+													<input name="price"  style='width:100px' id="param_price" class="format_number" _autocheck="true" type="text" />
+													<img class='tipS' title='Giá bán sử dụng để giao dịch' style='margin-bottom:-8px'  src='crown/images/icons/notifications/information.png'/>
+												</span>
+												<span name="price_autocheck" class="autocheck"></span>
+												<div name="price_error" class="clear error"></div>
+											</div>
+											<div class="clear"></div>
+										</div>
+
+										<!-- Price -->
+										<div class="formRow">
+											<label class="formLeft" for="param_discount">
+												Giảm giá (VNĐ) 
+												<span></span>:
+											</label>
+											<div class="formRight">
+												<span>
+													<input name="discount"  style='width:100px' id="param_discount" class="format_number"  type="text" />
+													<img class='tipS' title='Số tiền giảm giá' style='margin-bottom:-8px'  src='crown/images/icons/notifications/information.png'/>
+												</span>
+												<span name="discount_autocheck" class="autocheck"></span>
+												<div name="discount_error" class="clear error"></div>
+											</div>
+											<div class="clear"></div>
+										</div>
+
+
+										<div class="formRow">
+											<label class="formLeft" for="param_cat">Thể loại:<span class="req">*</span></label>
+											<div class="formRight">
+												<select name="cat" _autocheck="true" id='param_cat' class="left">
+													<option value="">Lựa chọn danh mục</option>
+																      <!-- kiem tra danh muc co danh muc con hay khong -->
+													<optgroup label="Tivi">
+													    <option value="18">Toshiba</option>
+													    <option value="17">Samsung</option>
+													    <option value="16">Panasonic</option>
+													    <option value="15">LG</option>
+													    <option value="14">JVC</option>
+													     <option value="13">AKAI</option>
+													</optgroup>
+													<optgroup label="Điện thoại">
+													    <option value="12">HTC</option>
+													    <option value="11">BlackBerry</option>
+													    <option value="10">Asus</option>
+													    <option value="9">Apple</option>
+													</optgroup>
+													<optgroup label="Laptop">
+													    <option value="8">HP</option>
+													    <option value="7">Dell</option>
+													    <option value="6">Asus</option>
+												</select>
+												<span name="cat_autocheck" class="autocheck"></span>
+												<div name="cat_error" class="clear error"></div>
+											</div>
+											<div class="clear"></div>
+										</div>
+										<!-- warranty -->
+										<div class="formRow">
+											<label class="formLeft" for="param_warranty">
+												Bảo hành :
+											</label>
+											<div class="formRight">
+												<span class="oneFour"><input name="warranty" id="param_warranty"  type="text" /></span>
+												<span name="warranty_autocheck" class="autocheck"></span>
+												<div name="warranty_error" class="clear error"></div>
+											</div>
+											<div class="clear"></div>
+										</div>
+
+										<div class="formRow">
+											<label class="formLeft" for="param_sale">Tặng quà:</label>
+											<div class="formRight">
+												<span class="oneTwo"><textarea name="sale" id="param_sale" rows="4" cols=""></textarea></span>
+												<span name="sale_autocheck" class="autocheck"></span>
+												<div name="sale_error" class="clear error"></div>
+											</div>
+											<div class="clear"></div>
+										</div>					         
+										<div class="formRow hide"></div>
+									</div> 
+									<div id='tab2' class="tab_content pd0 tab-pane" role="tabpanel">			
+										<div class="formRow">
+											<label class="formLeft" for="param_site_title">Title:</label>
+											<div class="formRight">
+												<span class="oneTwo"><textarea name="site_title" id="param_site_title" _autocheck="true" rows="4" cols=""></textarea></span>
+												<span name="site_title_autocheck" class="autocheck"></span>
+												<div name="site_title_error" class="clear error"></div>
+											</div>
+											<div class="clear"></div>
+										</div>
+
+										<div class="formRow">
+											<label class="formLeft" for="param_meta_desc">Meta description:</label>
+											<div class="formRight">
+												<span class="oneTwo"><textarea name="meta_desc" id="param_meta_desc" _autocheck="true" rows="4" cols=""></textarea></span>
+												<span name="meta_desc_autocheck" class="autocheck"></span>
+												<div name="meta_desc_error" class="clear error"></div>
+											</div>
+											<div class="clear"></div>
+										</div>
+
+										<div class="formRow">
+											<label class="formLeft" for="param_meta_key">Meta keywords:</label>
+											<div class="formRight">
+												<span class="oneTwo"><textarea name="meta_key" id="param_meta_key" _autocheck="true" rows="4" cols=""></textarea></span>
+												<span name="meta_key_autocheck" class="autocheck"></span>
+												<div name="meta_key_error" class="clear error"></div>
+											</div>
+											<div class="clear"></div>
+										</div>
+									     <div class="formRow hide"></div>
+									</div>
+									 
+									<div id='tab3' class="tab_content pd0 tab-pane" role="tabpanel">
+									    <div class="formRow">
+											<label class="formLeft">Nội dung:</label>
+											<div class="formRight">
+												<textarea name="content" id="param_content" class="editor"></textarea>
+												<div name="content_error" class="clear error"></div>
+											</div>
+											<div class="clear"></div>
+										</div>
+									    <div class="formRow hide"></div>
+									</div>
+				        		</div><!-- End tab_container-->
+				        		<div class="formSubmit">
+				           			<input type="submit" value="Thêm mới" class="redB" />
+				           			<input type="reset" value="Hủy bỏ" class="basic" />
+				           		</div>
+				        		<div class="clear"></div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			<div class="clear"></div>
+			<div class="clear mt30"></div>
+			<!-- Footer -->
+		    <div id="footer">
+		        <div class="wrapper col-md-12">
+		        	<div>Bản quyền © 2012-2016</div>
+		        </div>
+		    </div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(function(){
+			$("#toggle-sidebar").on("click",function(){
+				$("#wrapper").toggleClass("show-sidebar");
+			})
+		});
+	})
+</script>
+</html>

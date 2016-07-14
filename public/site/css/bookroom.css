@@ -1,0 +1,275 @@
+#map-wrap {
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+    height: 0;
+}
+.breadcrumb{
+	margin-bottom: 0px;
+	padding: 0px;
+}
+
+#book-right.fixed{
+	position: fixed;
+}
+#book-right.bottom{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.inline{
+	display: inline-block;
+}
+#wrapper{
+	/*background-color: #f4f4f4;*/
+}
+#navigation{
+	background: #fff;
+	min-height: 50px;
+	padding: 0px;
+	border-top:2px solid #2a6ebe;
+	border-bottom:1px solid #ccc;
+}
+#navigation .navbar-brand,
+#navigation .navbar-nav>li>a{
+	color: #333;
+}
+#book-main{
+	position: relative;
+}
+/*--- left ---*/
+
+#book-left{
+
+}
+#book-left .tit-room{
+	margin-bottom: 25px;
+}
+#book-left .tit-room h1{
+	color:#398fd1;
+	font-weight: 600;
+	font-size: 25px;
+	margin-top:10px;
+}
+#book-left .tit-room p{
+	color:#888;
+	font-size: 13px;
+}
+		/*--- feature ---*/
+.feature{
+	margin-bottom: 50px;
+}
+.feature .wrap-fea .fea-item{
+	text-align: center;
+	width: 16%;
+	font-size: 13px;
+	color:#999;
+	float: left;
+}
+.feature .wrap-fea .fea-item span{
+	width: 48px;
+    height: 48px;
+    display: block;
+    text-align: center;
+    margin:10px auto;
+    opacity: 0.6;
+}
+.amenities ul > li {
+	float: left;
+	width: 50%;
+	padding: 5px;
+}
+
+.w30{
+	width: 30%;
+}
+
+.item-room{
+	margin-bottom: 40px;
+}
+.item-room h2{
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+		/*--- description ---*/
+
+.description p{
+	font-size:14px;
+	line-height: 22px;
+}
+		/*--- amenities ---*/
+
+.amenities ul li{
+	font-size:13px;
+}
+.amenities ul li span{
+	color:#398fd1;
+}
+		/*--- price ---*/
+
+
+.table>tbody>tr>td, 
+.table>tbody>tr>th, 
+.table>tfoot>tr>td, 
+.table>tfoot>tr>th, 
+.table>thead>tr>td, 
+.table>thead>tr>th{
+	border-top: 0;
+}
+.price .tb-price table>tbody>tr>th{
+	font-size:14px;
+	color:#888;
+	font-weight: 500;
+	width: 30%;
+}
+.price .tb-price table>tbody>tr>td{
+	font-weight: 600;
+	font-size:14px;
+	color: #333;
+	width: 70%;
+}
+		/*--- location ---*/
+.location{
+
+}
+.location .map-wrap iframe{
+	width:100%;
+}
+		/*---house rule---*/
+.house-rules p{
+	font-size:14px;
+	line-height: 22px;
+}
+		/*--- other-detail---*/
+ 
+.other-detail .tb-detail table>tbody>tr>th{
+	font-size:14px;
+	color:#888;
+	font-weight: 500;
+	width: 30%;
+}
+.other-detail .tb-detail table>tbody>tr>td{
+	font-weight: 600;
+	font-size:14px;
+	color: #333;
+}
+/*--- right ---*/
+#book-right{
+
+}
+#book-now{
+	margin-top: 10px;
+}
+.book-prices{
+	margin-bottom: 20px;
+	padding: 10px;
+}
+.price-wrap .label{
+	font-size: 12px;
+	padding: 10px;
+	color: #e92940;
+	background: #ffeaed;
+}
+.price-wrap p.price-num{
+	margin-bottom: 0px;
+}
+.price-wrap p.price-num span.pr-old{
+	font-size: 14px;
+	font-weight: 500; 
+	color: #ABABAB;
+	text-decoration: line-through;
+}
+.price-wrap p.price-num span.pr-curent{
+	font-size: 20px;
+	font-weight: 800; 
+	color: #333;
+	margin-right: 10px;
+}
+.price-wrap p.currency{
+	font-weight: 800;
+	margin-bottom: 0px;
+}
+.price-wrap .price-method{
+	color:#888;
+	font-size: 13px;
+}
+	/*--data-guest--*/
+.data-guest{
+	margin-bottom: 20px;
+	padding: 10px;
+}
+.data-guest form#frm-book .book-wrap.middle{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.data-guest form#frm-book .book-wrap label{
+	color:#888;
+}
+.data-guest form#frm-book .book-action button.btn-success{
+	width: 100%;
+	border-radius:2px;
+	padding: 10px;
+	border: 1px solid #777;
+	font-size:18px;
+	font-weight: bold;
+	transition: background 0.3s;
+	-webkit-transition: background 0.3s;
+	-moz-transition: background 0.3s;
+}
+	/*-- member --*/
+.member{
+	background-color:#f9f9f9;
+	padding: 10px; 
+	margin-bottom: 20px;
+}
+.member h2.owner-xs{
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+.member .member-avt{
+	margin-right: 10px;
+}
+.member-info h5.name-mb{
+	font-weight: 600;
+	font-size: 16px;
+	color: #333;
+}
+.member-info .since{
+	font-size: 13px;
+	color: #333;
+}
+.member-info .link-show{
+	color:#24679a;
+	font-size:13px;
+}
+.member-info .link-show:hover{
+	text-decoration: underline;
+}
+.update p{
+	font-size: 13px;
+	color: #888;
+	margin-top:10px;
+}
+.contact-own button{
+	width: 100%;
+	border-radius:2px;
+	padding: 10px;
+	color: #888;
+	border: 1px solid #888;
+	font-size:18px;
+	font-weight: bold;
+	transition: background 0.3s;
+	-webkit-transition: background 0.3s;
+	-moz-transition: background 0.3s;
+}
+	/*--Share--*/
+.share{
+	padding: 10px;
+}
+.share p{
+	color: #888;
+	font-size: 13px;
+}

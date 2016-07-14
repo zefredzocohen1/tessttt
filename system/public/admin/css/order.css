@@ -1,0 +1,13 @@
+table.myTable thead.filter .list_filter td.label-tit{
+	vertical-align: middle;
+	text-align: right;
+}
+table.myTable thead.filter .list_filter td.label-tit label{
+	font-weight: 300;
+}
+.list_filter td.item{
+	vertical-align: middle;
+}
+.list_filter td.item input{
+	max-width: 100px;
+}

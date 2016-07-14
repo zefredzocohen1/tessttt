@@ -1,0 +1,21 @@
+@media all and (max-width: 768px) {
+	#navigation{
+		background: #333;
+	}
+	#banner-search .block-banner .banner-bg{
+		min-height:450px;
+	}
+	#banner-search .home-search{
+		bottom: 10px;
+	}
+	.home-search h2{
+		font-size: 30px;
+	}
+	.home-search .search{
+		padding: 20px 0px;
+	}
+	#location-to ul .location-item a p{
+		font-size: 16px;
+		margin-top:-11px; 
+	}
+}

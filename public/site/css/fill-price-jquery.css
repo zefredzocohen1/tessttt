@@ -1,0 +1,16 @@
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+	width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    top: -11px;
+}
+.ui-slider-horizontal .ui-slider-handle{
+	margin-left: -15px
+}
+#slider-range{
+	width:92%;
+	margin:10px auto;
+}
+.ui-widget-header{
+	    background: #0798C3;
+}

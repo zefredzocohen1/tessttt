@@ -1,0 +1,766 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>starview</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+
+<link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+<link rel="stylesheet" type="text/css" href="css/listroom.css"/>
+<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="css/fotorama.css"> <!-- 3 KB -->
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="css/fill-price-jquery.css">
+
+
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/fotorama.js"></script> 
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<nav class="navbar" class="navbar navbar-default" id="navigation">
+			  	<div class="container">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+					    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					    </button>
+				      	<a class="navbar-brand" href="index.html">STAR VIEW</a>
+				    </div>
+
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					    <ul class="nav navbar-nav navbar-right">
+					        <li><a href="register.html">Đăng kí</a></li>
+					        <li><a href="login.html">Đăng nhập</a></li>
+					       	<li><a href="postnews1.html">Đăng tin cho thuê</a></li>
+					    </ul>
+				    </div><!-- /.navbar-collapse -->
+				</div>
+			</nav>
+		</header>	
+		
+		<section id="search">
+			<div class="home-search">
+				<div class="container">
+					<div class="row">
+						<div class="block search">
+							<form action="">
+								<div class="col-md-4 col-sm-12">
+									<input type="text" name="location" id="location" class="form-control" placeholder="Điểm đến của bạn ?" />
+								</div>
+								<div class="col-md-2 col-sm-3 col-xs-6">
+									<input type="text" name="checkin" id="checkin" class="form-control" placeholder="Nhận phòng"/>
+								</div>
+								<div class="col-md-2 col-sm-3 col-xs-6">
+									<input type="text" name="checkout" id="checkout" class="form-control" placeholder="Trả phòng" />
+								</div>
+								<div class="col-md-2 col-sm-3 col-xs-6">
+									<input type="text" name="guest" id="guest" class="form-control" placeholder="Khách"/>
+								</div>
+								<div class="col-md-2 col-sm-3 col-xs-6">
+									<input type="submit" name="search" id="action-search" class="btn btn-primary" value="Tìm kiếm" />
+								</div>
+								<div class="clear"></div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="breadcrum-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 block">
+						<ol class="breadcrumb">
+						  	<li><a href="#">Home</a></li>
+						  	<li><a href="#">Library</a></li>
+						  	<li class="active">Data</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="btn-option">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 block">
+						<div class="filter-btn">
+							<button type="button" id="filter-control" class="btn btn-default hidden-md hidden-lg"  data-toggle="button" aria-pressed="false" autocomplete="off">
+								<span class="show-filter">Bộ lọc</span>
+								<span class="hide-filter">Ẩn bộ lọc <<</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="main-list">
+			<div class="container">
+				<div class="row">
+				<!-- <div  style="max-width: 1170px;margin: 0 auto;"> -->
+					<div id="sidebar" class="col-md-4  visible-lg visible-md">
+						<div class="map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119175.98717794055!2d105.83696370000004!3d21.02269665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSGFub2ksIEhvw6BuIEtp4bq_bSwgSGFub2ksIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1461656965356" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+						<div class="filter">
+							<form>
+								<!--room-type-->
+								<div class="panel panel-default fill-item room-type">
+									<div class="panel-heading room-type-heading clearfix" data-toggle="collapse" data-target="#room-type-body" >
+										<h3>Loại phòng</h3>
+										<span class="glyphicon glyphicon-chevron-down"></span>
+									</div>
+									<div class="panel-body collapse in" id="room-type-body" role="group" aria-label="...">
+										<div class="wrap-fill btn-group" data-toggle="buttons">
+											<label class="btn btn-default">
+												<input type="checkbox" name="room_types" id="entry-home" autocomplete="off">
+												<span class="icon icon-house"></span>
+												<span class="icon-active icon-house-active"></span>
+												Nguyên căn
+											</label>
+											<label class="btn btn-default">
+												<input type="checkbox" name="room_types" id="private-room" autocomplete="off">
+												<span class="icon icon-room"></span>
+												<span class="icon-active icon-room-active"></span>
+												Phòng riêng
+											</label>
+										</div>
+									</div>
+
+								</div>
+								<!--size-->
+								<div class="panel panel-default fill-item size-type">
+									<div class="panel-heading size-type-heading clearfix" data-toggle="collapse" data-target="#size-type-body" >
+										<h3>Diện tích</h3>
+										<span class="glyphicon glyphicon-chevron-down"></span>
+									</div>
+									<div class="panel-body collapse in" id="size-type-body" role="group" aria-label="...">
+										<div class="wrap-fill btn-group">
+											<div class="form-group">
+											    <label for="">Phòng ngủ</label>
+											    <select name="bedroom" class="form-control" id="">
+											    	<option>Bất kỳ</option>
+											    	<option>1</option>
+											    	<option>2</option>
+											    	<option>3</option>
+											    	<option>4</option>
+											    	<option>5</option>
+											    	<option>6</option>
+											    	<option>7</option>
+											    	<option>8</option>
+											    	<option>9</option>
+											    	<option>10+</option>
+											    </select>
+											</div>
+											<div class="form-group">
+											    <label for="">Phòng tắm</label>
+											    <select name="bedroom" class="form-control" id="">
+											    	<option>Bất kỳ</option>
+											    	<option>1</option>
+											    	<option>2</option>
+											    	<option>3</option>
+											    	<option>4</option>
+											    	<option>5</option>
+											    	<option>6</option>
+											    	<option>7</option>
+											    	<option>8</option>
+											    	<option>9</option>
+											    	<option>10+</option>
+											    </select>
+											</div>
+											<div class="form-group">
+											    <label for="">Giường</label>
+											    <select name="bedroom" class="form-control" id="">
+											    	<option>Bất kỳ</option>
+											    	<option>1</option>
+											    	<option>2</option>
+											    	<option>3</option>
+											    	<option>4</option>
+											    	<option>5</option>
+											    	<option>6</option>
+											    	<option>7</option>
+											    	<option>8</option>
+											    	<option>9</option>
+											    	<option>10+</option>
+											    </select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--amenities-->
+								<div class="panel panel-default fill-item amenities-type">
+									<div class="panel-heading amenities-type-heading clearfix" data-toggle="collapse" data-target="#amenities-type-body" >
+										<h3>Tiện nghi</h3>
+										<span class="glyphicon glyphicon-chevron-down"></span>
+									</div>
+									<div class="panel-body collapse in" id="amenities-type-body" role="group" aria-label="...">
+										<div class="wrap-fill btn-group">
+											<div class="checkbox inline w50">
+												<label>
+													<input type="checkbox">
+													TV
+													<small>(120)</small>
+												</label>
+											</div>
+											<div class="checkbox inline w50">
+												<label>
+													<input type="checkbox">
+													Có người bảo vệ
+													<small>(120)</small>
+												</label>
+											</div>
+											<div class="checkbox inline w50">
+												<label>
+													<input type="checkbox">
+													Mạng viễn thông không dây
+													<small>(120)</small>
+												</label>
+											</div>
+											<div class="checkbox inline w50">
+												<label>
+													<input type="checkbox">
+													Có chỗ đậu xe
+													<small>(120)</small>
+												</label>
+											</div>
+											<div class="checkbox inline w50">
+												<label>
+													<input type="checkbox">
+													Có máy lạnh
+													<small>(120)</small>
+												</label>
+											</div>
+											<div class="checkbox inline w50">
+												<label>
+													<input type="checkbox">
+													Thang máy
+													<small>(120)</small>
+												</label>
+											</div>
+											<div class="checkbox inline w50">
+												<label>
+													<input type="checkbox">
+													Hồ bơi riêng
+													<small>(120)</small>
+												</label>
+											</div>
+											<div class="checkbox inline w50">
+												<label>
+													<input type="checkbox">
+													Lò sưởi trong nhà
+													<small>(120)</small>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- price-range -->
+								<div class="panel panel-default fill-item price-range">
+									<div class="panel-heading price-range-heading clearfix" data-toggle="collapse" data-target="#price-range-body" >
+										<h3>Giá</h3>
+										<span class="glyphicon glyphicon-chevron-down"></span>
+										
+									</div>
+									<div class="panel-body collapse in" id="price-range-body" role="group" aria-label="...">
+										<div class="wrap-fill btn-group">
+											<div id="slider-range"></div>
+											<div class="clearfix">
+												<!-- <label for="amount">Price range:</label> -->
+												<input type="text" id="min-amount" class="w50 pull-left" readonly style="border:0; color:#398fd1; font-weight:bold;text-align:left">
+												<input type="text" id="max-amount" class="w50 pull-left" readonly style="border:0; color:#398fd1; font-weight:bold;text-align:right">
+											</div> 
+										</div>
+									</div>
+								</div>
+
+								<!-- experience -->
+								<div class="panel panel-default fill-item price-range">
+									<div class="panel-heading experience-heading clearfix" data-toggle="collapse" data-target="#experience-body" >
+										<h3>Trải nghiệm</h3>
+										<span class="glyphicon glyphicon-chevron-down"></span>
+									</div>
+									<div class="panel-body collapse in" id="experience-body" role="group" aria-label="...">
+										<div class="wrap-fill btn-group">
+											<div class="checkbox inline w50">
+												<label>
+													<input type="checkbox">
+													Bãi biển
+													<small>(120)</small>
+												</label>
+											</div>
+											<div class="checkbox inline w50">
+												<label>
+													<input type="checkbox">
+													Mua sắm
+													<small>(120)</small>
+												</label>
+											</div>
+											<div class="checkbox inline w50">
+												<label>
+													<input type="checkbox">
+													Tiết kiệm
+													<small>(120)</small>
+												</label>
+											</div>
+											<div class="checkbox inline w50">
+												<label>
+													<input type="checkbox">
+													Lãng mạn
+													<small>(120)</small>
+												</label>
+											</div>
+											<div class="checkbox inline w50">
+												<label>
+													<input type="checkbox">
+													Độc đáo
+													<small>(120)</small>
+												</label>
+											</div>
+											<div class="checkbox inline w50">
+												<label>
+													<input type="checkbox">
+													Độc đáo
+													<small>(120)</small>
+												</label>
+											</div>
+											<div class="checkbox inline w50">
+												<label>
+													<input type="checkbox">
+													Độc đáo
+													<small>(120)</small>
+												</label>
+											</div>
+											<div class="checkbox inline w50">
+												<label>
+													<input type="checkbox">
+													Độc đáo
+													<small>(120)</small>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div id="result-list" class="col-md-8 col-sm-12 col-xs-12">
+						<div id="sort-pager" class="row">
+							<div id="sort" class="col-sm-6 form-group">
+								<label>Sắp xếp theo:</label>
+								<div class="btn-group" data-toggle="buttons">
+									<label class="btn btn-default active">
+									    <input type="radio" name="options" id="option1" autocomplete="off" checked> 
+									    Phổ biến
+									</label>
+									<label class="btn btn-default" id="price-sort">
+									    <input type="radio" name="options" id="option2" autocomplete="off"> 
+									    Giá
+									    <span class="glyphicon glyphicon-sort-by-attributes up"></span>
+									    <span class="glyphicon glyphicon-sort-by-attributes-alt down"></span>
+									    
+									</label>
+								</div>
+							</div>
+							<div id="pager" class="col-sm-6">
+								<span> 1 - 4 trong số 4 Bài đăng</span>
+							</div>
+							<div id="filter-active">
+								
+							</div>	
+						</div>
+						<div id="list-room">
+							<div class="list-room-item clearfix">
+								<div class="photo col-sm-5 col-xs-12">
+									<a href="bookroom.html">
+										<img src="./images/room-1.jpg" class="img-responsive" />
+										<span class="label label-default tag sales">-15%</span>
+									</a>
+								</div>
+								<div class="info-r col-sm-7 col-xs-12">
+									<div class="info-data">
+										<h3 class="title-r">
+											<a href="bookroom.html">Dormitory in Hanoi Old Quarter</a>
+										</h3>
+										<p class="type-location">
+											<span class="type">Khách sạn</span>
+											<span class="location">- Hà Nội, Hà Nội, Việt Nam</span>
+										</p>
+										<p class="type-r hidden-xs">Phòng riêng</p>
+										<p class="bedr-numguest">
+											<span>Phòng ngủ: 1</span>
+											<span>- Số khách tối đa: 5</span>
+										</p>
+									</div>
+									<div class="info-price more">
+										<p class="price-currency">
+											<span>VND</span>
+										</p>
+										<p class="price-r">
+											<span class="price-old">30</span>
+											<span class="price-cur">20</span>
+										</p>
+										<p class="per-night">Một đêm</p>
+										<p class="type-sales">
+											<span class="label label-default tag sales-text">Khuyến mãi phút cuối</span>
+										</p>
+										<a href="bookroom.html" class="btn btn-default more-show">Hiển thị thêm</a>
+									</div>
+								</div>
+							</div>
+							<div class="list-room-item clearfix">
+								<div class="photo col-sm-5 col-xs-12">
+									<a href="bookroom.html">
+										<img src="./images/room-2.jpg" class="img-responsive" />
+										<span class="label label-default tag sales">-15%</span>
+									</a>
+								</div>
+								<div class="info-r col-sm-7 col-xs-12">
+									<div class="info-data">
+										<h3 class="title-r">
+											<a href="bookroom.html">Dormitory in Hanoi Old Quarter</a>
+										</h3>
+										<p class="type-location">
+											<span class="type">Khách sạn</span>
+											<span class="location">- Hà Nội, Hà Nội, Việt Nam</span>
+										</p>
+										<p class="type-r hidden-xs">Phòng riêng</p>
+										<p class="bedr-numguest">
+											<span>Phòng ngủ: 1</span>
+											<span>- Số khách tối đa: 5</span>
+										</p>
+									</div>
+									<div class="info-price more">
+										<p class="price-currency">
+											<span>VND</span>
+										</p>
+										<p class="price-r">
+											<span class="price-old">30</span>
+											<span class="price-cur">20</span>
+										</p>
+										<p class="per-night">Một đêm</p>
+										<p class="type-sales">
+											<span class="label label-default tag sales-text">Khuyến mãi phút cuối</span>
+										</p>
+										<a href="bookroom.html" class="btn btn-default more-show">Hiển thị thêm</a>
+									</div>
+								</div>
+							</div>
+							<div class="list-room-item clearfix">
+								<div class="photo col-sm-5 col-xs-12">
+									<a href="bookroom.html">
+										<img src="./images/room-3.jpg" class="img-responsive" />
+										<span class="label label-default tag sales">-15%</span>
+									</a>
+								</div>
+								<div class="info-r col-sm-7 col-xs-12">
+									<div class="info-data">
+										<h3 class="title-r">
+											<a href="bookroom.html">Dormitory in Hanoi Old Quarter</a>
+										</h3>
+										<p class="type-location">
+											<span class="type">Khách sạn</span>
+											<span class="location">- Hà Nội, Hà Nội, Việt Nam</span>
+										</p>
+										<p class="type-r hidden-xs">Phòng riêng</p>
+										<p class="bedr-numguest">
+											<span>Phòng ngủ: 1</span>
+											<span>- Số khách tối đa: 5</span>
+										</p>
+									</div>
+									<div class="info-price more">
+										<p class="price-currency">
+											<span>VND</span>
+										</p>
+										<p class="price-r">
+											<span class="price-old">30</span>
+											<span class="price-cur">20</span>
+										</p>
+										<p class="per-night">Một đêm</p>
+										<p class="type-sales">
+											<span class="label label-default tag sales-text">Khuyến mãi phút cuối</span>
+										</p>
+										<a href="bookroom.html" class="btn btn-default more-show">Hiển thị thêm</a>
+									</div>
+								</div>
+							</div>
+							<div class="list-room-item clearfix">
+								<div class="photo col-sm-5 col-xs-12">
+									<a href="bookroom.html">
+										<img src="./images/room-4.jpg" class="img-responsive" />
+										<span class="label label-default tag sales">-15%</span>
+									</a>
+								</div>
+								<div class="info-r col-sm-7 col-xs-12">
+									<div class="info-data">
+										<h3 class="title-r">
+											<a href="bookroom.html">Dormitory in Hanoi Old Quarter</a>
+										</h3>
+										<p class="type-location">
+											<span class="type">Khách sạn</span>
+											<span class="location">- Hà Nội, Hà Nội, Việt Nam</span>
+										</p>
+										<p class="type-r hidden-xs">Phòng riêng</p>
+										<p class="bedr-numguest">
+											<span>Phòng ngủ: 1</span>
+											<span>- Số khách tối đa: 5</span>
+										</p>
+									</div>
+									<div class="info-price more">
+										<p class="price-currency">
+											<span>VND</span>
+										</p>
+										<p class="price-r">
+											<span class="price-old">30</span>
+											<span class="price-cur">20</span>
+										</p>
+										<p class="per-night">Một đêm</p>
+										<p class="type-sales">
+											<span class="label label-default tag sales-text">Khuyến mãi phút cuối</span>
+										</p>
+										<a href="bookroom.html" class="btn btn-default more-show">Hiển thị thêm</a>
+									</div>
+								</div>
+							</div>
+							<div class="list-room-item clearfix">
+								<div class="photo col-sm-5 col-xs-12">
+									<a href="bookroom.html">
+										<img src="./images/room-5.jpg" class="img-responsive" />
+										<span class="label label-default tag sales">-15%</span>
+									</a>
+								</div>
+								<div class="info-r col-sm-7 col-xs-12">
+									<div class="info-data">
+										<h3 class="title-r">
+											<a href="bookroom.html">Dormitory in Hanoi Old Quarter</a>
+										</h3>
+										<p class="type-location">
+											<span class="type">Khách sạn</span>
+											<span class="location">- Hà Nội, Hà Nội, Việt Nam</span>
+										</p>
+										<p class="type-r hidden-xs">Phòng riêng</p>
+										<p class="bedr-numguest">
+											<span>Phòng ngủ: 1</span>
+											<span>- Số khách tối đa: 5</span>
+										</p>
+									</div>
+									<div class="info-price more">
+										<p class="price-currency">
+											<span>VND</span>
+										</p>
+										<p class="price-r">
+											<span class="price-old">30</span>
+											<span class="price-cur">20</span>
+										</p>
+										<p class="per-night">Một đêm</p>
+										<p class="type-sales">
+											<span class="label label-default tag sales-text">Khuyến mãi phút cuối</span>
+										</p>
+										<a href="bookroom.html" class="btn btn-default more-show">Hiển thị thêm</a>
+									</div>
+								</div>
+							</div>
+							<div class="list-room-item clearfix">
+								<div class="photo col-sm-5 col-xs-12">
+									<a href="bookroom.html">
+										<img src="./images/room-6.jpg" class="img-responsive" />
+										<span class="label label-default tag sales">-15%</span>
+									</a>
+								</div>
+								<div class="info-r col-sm-7 col-xs-12">
+									<div class="info-data">
+										<h3 class="title-r">
+											<a href="bookroom.html">Dormitory in Hanoi Old Quarter</a>
+										</h3>
+										<p class="type-location">
+											<span class="type">Khách sạn</span>
+											<span class="location">- Hà Nội, Hà Nội, Việt Nam</span>
+										</p>
+										<p class="type-r hidden-xs">Phòng riêng</p>
+										<p class="bedr-numguest">
+											<span>Phòng ngủ: 1</span>
+											<span>- Số khách tối đa: 5</span>
+										</p>
+									</div>
+									<div class="info-price more">
+										<p class="price-currency">
+											<span>VND</span>
+										</p>
+										<p class="price-r">
+											<span class="price-old">30</span>
+											<span class="price-cur">20</span>
+										</p>
+										<p class="per-night">Một đêm</p>
+										<p class="type-sales">
+											<span class="label label-default tag sales-text">Khuyến mãi phút cuối</span>
+										</p>
+										<a href="bookroom.html" class="btn btn-default more-show">Hiển thị thêm</a>
+									</div>
+								</div>
+							</div>
+							<div class="list-room-item clearfix">
+								<div class="photo col-sm-5 col-xs-12">
+									<a href="bookroom.html">
+										<img src="./images/room-7.jpg" class="img-responsive" />
+										<!-- <span class="label label-default tag sales">-15%</span> -->
+									</a>
+								</div>
+								<div class="info-r col-sm-7 col-xs-12">
+									<div class="info-data">
+										<h3 class="title-r">
+											<a href="bookroom.html">Dormitory in Hanoi Old Quarter</a>
+										</h3>
+										<p class="type-location">
+											<span class="type">Khách sạn</span>
+											<span class="location">- Hà Nội, Hà Nội, Việt Nam</span>
+										</p>
+										<p class="type-r hidden-xs">Phòng riêng</p>
+										<p class="bedr-numguest">
+											<span>Phòng ngủ: 1</span>
+											<span>- Số khách tối đa: 5</span>
+										</p>
+									</div>
+									<div class="info-price more">
+										<p class="price-currency">
+											<span>VND</span>
+										</p>
+										<p class="price-r">
+											<!-- <span class="price-old">30</span> -->
+											<span class="price-cur">20</span>
+										</p>
+										<p class="per-night">Một đêm</p>
+										<p class="type-sales">
+											<!-- <span class="label label-default tag sales-text">Khuyến mãi phút cuối</span> -->
+										</p>
+										<a href="bookroom.html" class="btn btn-default more-show">Hiển thị thêm</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<nav id="pagination"> 
+							<ul class="pagination">
+							    <li>
+							      	<a href="#" aria-label="Previous">
+							        	<span aria-hidden="true">&laquo;</span>
+							      	</a>
+							    </li>
+							    <li><a href="#">1</a></li>
+							    <li><a href="#">2</a></li>
+							    <li><a href="#">3</a></li>
+							    <li><a href="#">4</a></li>
+							    <li><a href="#">5</a></li>
+							    <li>
+							      <a href="#" aria-label="Next">
+							        <span aria-hidden="true">&raquo;</span>
+							      </a>
+							    </li>
+							</ul>
+						</nav>
+					</div>
+					<!-- </div> -->
+				</div>
+			</div>
+		</section>
+		
+		<footer>
+			<div class="info">
+				<div class="container">
+					<div class="row">
+						<div class="block">
+							<div class="col-md-3 col-sm-3 col-xs-6 info-item">
+								<h5>Điểm đến nổi bật</h5>
+								<ul>
+									<li><a href="#">Bali</a></li>
+									<li><a href="#">Băng Cốc</a></li>
+									<li><a href="#">Đài Bắc</a></li>
+									<li><a href="#">Hồng Kông</a></li>
+									<li><a href="#">Kuala Lumpur</a></li>
+								</ul>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-6 info-item">
+								<h5>Thông tin công ty</h5>
+								<ul>
+									<li><a href="#">Về chúng tôi</a></li>
+									<li><a href="#">Báo Chí</a></li>
+									<li><a href="#">Liên hệ</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">Trợ giúp</a></li>
+								</ul>
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-6 info-item">
+								<h5>Theo dõi trên:</h5>
+								<ul>
+									<li><a href="#">Facebook</a></li>
+									<li><a href="#">Twitter</a></li>
+									<li><a href="#">Google+</a></li>
+								</ul>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-6 info-item payment">
+								<h5>Thanh toán Bảo mật</h5>
+								<ul>
+									<li><img src="./images/visa.svg"></li>
+									<li><img src="./images/visa.svg"></li>
+									<li><img src="./images/visa.svg"></li>
+									<li><img src="./images/visa.svg"></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cpr clear">
+				<div class="container">
+					<div class="row">
+						<div class="block">
+							<p><span class="glyphicon glyphicon-copyright-mark"></span> 2016 STAR VIEW</p>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</footer>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$(function() {
+			    $( "#slider-range" ).slider({
+				    range: true,
+				    min: 0,
+				    max: 1000,
+				    values: [ 0, 1000 ],
+				    slide: function( event, ui ) {
+				        $( "#min-amount" ).val( "$" + ui.values[ 0 ] );
+				        $( "#max-amount" ).val( "$" + ui.values[ 1 ] );
+				    }
+			    });
+			    $( "#min-amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ));
+			    $( "#max-amount" ).val( "$" + $( "#slider-range" ).slider( "values", 1 ));
+			});
+
+			$(function(){
+				$("#filter-control").on("click",function(){
+					$("#sidebar").toggleClass("show");
+				});
+			});
+
+			$(function(){
+				$("#price-sort").on("click",function(){
+					$("#price-sort").toggleClass("sort-reverse");
+				});
+			});
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+.t-form {
+	display: block;
+	font-size:12px;
+}
+
+.t-form .req {
+	display: inline;
+	float: none;
+	color: #A73939;
+	margin-left: 5px;
+}
+
+.t-form .error {
+	color: #A73939;
+	font-size: 11px;
+}
+.t-form .error p {
+	padding-top: 2px;
+}
+
+.t-form .note {
+	display: block;
+	font-size: 11px;
+	color: #939393;
+	padding-top: 2px;
+}
+
+.t-form .t-input {
+	background: #fff;
+	color: #595959;
+	padding: 5px 5px;
+	border: 1px solid #ddd;
+	cursor: text;
+	
+	-webkit-border-radius:2px;
+	-khtml-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	
+	-webkit-transition-property:color,-webkit-box-shadow;
+	-moz-transition-property:color,-moz-box-shadow;
+	-ms-transition-property:color,-moz-box-shadow;
+	transition-property:color,-moz-box-shadow;
+	-webkit-transition-duration:0.3s;
+	-moz-transition-duration:0.3s;
+	-ms-transition-duration:0.3s;
+	transition-duration:0.3s;
+}
+.t-form .t-input.small {
+	padding: 5px 5px;
+	font-size: 11px;
+}
+.t-form .t-input::-webkit-scrollbar {
+	width: 7px;
+	padding-left: 5px;
+}
+.t-form .t-input::-webkit-scrollbar-thumb {
+	background: rgba(0,0,0,0.5);
+	margin-right: 10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+.t-form .t-input.error {
+	border: 1px solid #F68E8E;
+ 	-webkit-box-shadow:0 0 3px #F68E8E;
+ 	-moz-box-shadow:0 0 3px #F68E8E;
+ 	box-shadow:0 0 3px #F68E8E;
+}
+.t-form .t-input.focus {
+	border: 1px solid #B6DE5E;
+ 	-webkit-box-shadow:0 0 3px #B6DE5E;
+ 	-moz-box-shadow:0 0 3px #B6DE5E;
+ 	box-shadow:0 0 3px #B6DE5E;
+}
+.t-form .t-input:hover, .t-form .t-input:focus {
+	color: #333;
+	
+	border: 1px solid #B6DE5E;
+	-webkit-box-shadow:0 0 10px rgba(166, 210, 79, 0.4) inset,0 0 5px #B6DE5E;
+	-moz-box-shadow:0 0 10px rgba(166, 210, 79, 0.4) inset,0 0 5px #B6DE5E;
+	box-shadow:0 0 10px rgba(166, 210, 79, 0.4) inset,0 0 5px #B6DE5E;
+	
+	-webkit-transition-property:border,color,-webkit-box-shadow;
+	-moz-transition-property:border,color,-moz-box-shadow;
+	-o-transition-property:border,color,box-shadow;
+	-ms-transition-property:border,color,box-shadow;
+	transition-property:border,color,box-shadow;
+	-webkit-transition-duration:0.3s;
+	-moz-transition-duration:0.3s;
+	-o-transition-duration:0.3s;
+	-ms-transition-duration:0.3s;
+	transition-duration:0.3s;
+}
+.t-form input.t-input {
+	font-size: 12px;
+	height: 18px;
+	outline: 0px solid black;
+}
+.t-form textarea.t-input {
+	outline: 0px solid black;
+	line-height: 1.5em;
+	font-size: 12px;
+}
+.t-form input.t-input:disabled {
+	background: #F2F2F2;
+}
+
+.t-form select {
+	background: #fff;
+	border: 1px solid #ccc;
+	outline: none;
+	padding: 4px 3px;
+	color: #292929;
+	border: 1px solid #bbb;
+	
+	-webkit-border-radius:2px;
+	-khtml-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	
+	box-shadow: none;
+	box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+}
+
+.t-form label {
+	font-weight: normal;
+	cursor: pointer;
+}
+
+.t-form p {
+	padding: 0px;
+	margin: 0px;
+}
+
+.t-form input[type=submit], .t-form input[type=reset] {
+	margin-right: 5px;
+}
+
+
+.t-form .form-row {
+	padding: 5px 0;
+	clear: both;
+	position: relative;
+}
+.t-form .form-label {
+	padding-top: 6px;
+	display: inline;
+    float: left;
+	width: 25%;
+    text-shadow: 0 1px 0 #fff;
+}
+.t-form .form-item {
+	display: inline;
+    float: left;
+	width: 74%;
+    position: relative;
+}
+.t-form .form-submit {
+	display: inline;
+    float: right;
+	text-align: right;
+    position: relative;
+}
+.t-form .form-item .t-input, .t-form .form-item select {
+	width: 100%;
+}
+
+.t-form .autocheck {
+	float: left;
+	margin-left: 5px;
+}
+.t-form .autocheck div {
+	float: left;
+	height: 27px;
+	width: 30px;
+}
+.t-form .autocheck div#loader {
+	background: url("../img/loader.gif") center no-repeat;
+}
+.t-form .autocheck div#accept {
+	background: url("../img/accept.png") center no-repeat;
+}
+.t-form .autocheck div#error {
+	background: url("../img/error.png") center no-repeat;
+}
+
+.t-form .one { width: auto; display: inline; float: right; }
+.t-form .one:first-child { float: left; }
+.t-form .one-two { width: 49%; display: inline; float: right; }
+.t-form .one-two:first-child { float: left; }
+.t-form .one-three { width: 32%; display: inline; float: left; margin-left: 2%; }
+.t-form .one-three:first-child { margin-left: 0; float: left; }
+.t-form .two-three { width: 66%; float: right; margin-left: 2%; } 
+.t-form .two-three:first-child { margin-left: 0; float: left; }
+.t-form .one-four { width: 23%; float: left; margin-left: 2.7%; }
+.t-form .one-four:first-child { margin-left: 0; }
+
+
+/**
+ * Css sub
+ */
+.t-form.form-border .form-row {
+	border-bottom: 1px solid #EDEDED;
+}
+.t-form.form-border .form-row:last-child {
+	border-bottom: 0px;
+}
+

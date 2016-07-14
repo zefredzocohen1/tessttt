@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="182px" width="120px" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 120 182">
+<g fill-rule="evenodd" fill="none">
+<g transform="translate(-154 -758)">
+<g transform="translate(154 758)">
+<g fill="#888">
+<path d="m116 7h4v-7h-120v7h4v5h2v163h-6v7h120v-7h-6v-162.86l-2 0.003v162.86h-65v-4h-3v-55h-27.857v51h-0.143v4h-4v4h-4v-163h108v-5zm-98 111h24v49h-24v-49zm0 51h24v2h-24v-2zm-4 4h31v2h-31v-2zm-2 4h106v3h-116v-3h10zm-10-175h116v3h-116v-3zm4 5h108v3h-108v-3z"/>
+<path d="m21 139h8v-16h-8v16zm2-14h4v12h-4v-12z"/>
+<path d="m31 139h8v-16h-8v16zm2-14h4v12h-4v-12z"/>
+<path d="m21 157h8v-16h-8v16zm2-14h4v12h-4v-12z"/>
+<path d="m31 157h8v-16h-8v16zm2-14h4v12h-4v-12z"/>
+<path d="m36 85h-14v21h-2v4h20v-4h-2v-21h-2zm-12 2h12v7h-12v-7zm0 9h12v10h-12v-10z"/>
+<path d="m50 110h20v-4h-2v-21h-16v21h-2v4zm4-23h12v7h-12v-7zm0 9h12v10h-12v-10z"/>
+<path d="m100 106h-2v-21h-16v21h-2v4h20v-4zm-16-19h12v7h-12v-7zm0 9h12v10h-12v-10z"/>
+<path d="m40 74h-2v-21h-16v21h-2v4h20v-4zm-16-19h12v7h-12v-7zm0 9h12v10h-12v-10z"/>
+<path d="m50 78h20v-4h-2v-21h-16v21h-2v4zm4-23h12v7h-12v-7zm0 9h12v10h-12v-10z"/>
+<path d="m100 74h-2v-21h-16v21h-2v4h20v-4zm-16-19h12v7h-12v-7zm0 9h12v10h-12v-10z"/>
+<path d="m40 42h-2v-21h-16v21h-2v4h20v-4zm-16-19h12v7h-12v-7zm0 9h12v10h-12v-10z"/>
+</g>
+<g fill="#D8EEFF">
+<rect height="10" width="12" y="32" x="24"/>
+<rect height="10" width="12" y="64" x="24"/>
+<rect height="10" width="12" y="96" x="24"/>
+<rect height="10" width="12" y="32" x="54"/>
+<rect height="10" width="12" y="64" x="54"/>
+<rect height="10" width="12" y="96" x="54"/>
+<rect height="37" width="42" y="120" x="54"/>
+<rect height="10" width="12" y="32" x="84"/>
+<rect height="10" width="12" y="64" x="84"/>
+<rect height="10" width="12" y="96" x="84"/>
+</g>
+<g fill="#888">
+<path d="m66 21h-14v21h-2v4h20v-4h-2v-21h-2zm-12 2h12v7h-12v-7zm0 9h12v10h-12v-10z"/>
+<path d="m100 42h-2v-21h-16v21h-2v4h20v-4zm-16-19h12v7h-12v-7zm0 9h12v10h-12v-10z"/>
+<path d="m50 161h50v-4h-2v-39h-46v39h-2v4zm4-41h42v37h-42v-37z"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

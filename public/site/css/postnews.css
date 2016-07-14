@@ -1,0 +1,224 @@
+.inline{
+	display: inline-block;
+}
+.w90{
+	width: 90%;
+}
+
+
+#wrapper{
+	background-color: #f4f4f4;
+}
+#navigation{
+	background: #fff;
+	min-height: 50px;
+	padding: 0px;
+	border-top:2px solid #2a6ebe;
+	border-bottom:1px solid #ccc;
+}
+#navigation .navbar-brand,
+#navigation .navbar-nav>li>a{
+	color: #333;
+}
+/*--- step ---*/
+#step{
+
+}
+#step .step-item{
+	text-align: center;
+}
+#step .step-item ul{
+	margin-left:11px;
+}
+#step .step-item ul > li{
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 600;
+	padding: 10px 22px;
+}
+#step .step-item ul > li.active{
+	color: #2a6ebe;
+}
+
+#main-post{
+
+}
+#main-post .post-heading h3{
+	font-size:25px;
+	color: #398fd1;
+	font-weight: 600;
+}
+#main-post .post-heading p{
+	font-size: 18px;
+}
+#main-post .panel .panel-heading{
+	font-size: 20px;
+	font-weight: 600;
+	color:#797979;
+	background-color: #efefef;
+    -webkit-box-shadow: inset 0 1px 0 white;
+    -moz-box-shadow: inset 0 1px 0 white;
+    box-shadow: inset 0 1px 0 white;
+    background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #efefef), color-stop(100%, #f6f6f6));
+    background-image: -webkit-linear-gradient(bottom, #efefef, #f6f6f6);
+    background-image: -moz-linear-gradient(bottom, #efefef, #f6f6f6);
+    background-image: -o-linear-gradient(bottom, #efefef, #f6f6f6);
+    background-image: -ms-linear-gradient(bottom, #efefef, #f6f6f6);
+    background-image: linear-gradient(bottom, #efefef, #f6f6f6);
+}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:33.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    min-height:250px;
+    width:100%;
+    position:absolute;
+}
+
+@media (min-width: 768px){
+	.form-horizontal .info .control-label{
+		text-align: left;
+	}
+}
+#main-post  .form-horizontal .tien-nghi fieldset label{
+	font-weight: 100;
+	font-size: 13px;
+	color: #666666;
+}
+fieldset.inline.w30{
+	width: 30%;
+	display: inline-block;
+}
+.sub-step{
+	text-align: right;
+}
+.prev-step,
+.next-tep{
+	text-align:right;
+	display: inline-block;
+	position: relative;
+}
+.prev-step a,
+.next-tep input,
+.next-tep input{
+	background-color: #28c874;
+    border-color: #24b368;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: background 0.3s;
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+}
+.prev-step a:hover,
+.next-tep input:hover,
+.next-tep input:hover{
+	background-color:#28C8A3;
+	color: #fff;
+	border-color: #24b368;
+}
+
+.up-images{
+	margin:50px;
+	border: 1px solid #d9d9d9;
+    background: #efefef;
+    -webkit-box-shadow: inset 0 0 10px 2px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0 0 10px 2px rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 10px 2px rgba(0,0,0,0.1);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+.up-images .form-group{
+	margin-bottom: 0px;
+}
+.up-images p{
+	text-align: center;
+	font-size: 12px;
+	color: #777;
+	margin:30px 0px 10px 0px;
+}
+@media all and (max-width: 768px) {
+	.up-images{
+		margin:10px;
+	}
+}
+.images-posts .block-up{
+	margin: 10px 30px 60px 30px;
+}
+.images-posts .block-up #btn-up{
+	display: inline-block;
+	position: relative;
+	margin:10px 10px 10px 0px;
+}
+.images-posts .block-up #btn-up div.btn.btn-default{
+	position: relative;
+	background-color: #398fd1;
+	border: none;
+	border-radius: 0px;
+}
+.images-posts .block-up #btn-up span{
+	font-size:50px;
+	color: #fff;
+	padding: 40px;
+}
+.images-posts .block-up #btn-up div:before{
+	content: "Click to add photo";
+	position: absolute;
+	bottom: 15px;
+	left:30px;	
+	color: #fff;
+	font-size: 12px;
+}
+.images-posts .block-up input[type=file]{
+	position: absolute;
+	height: 142px;
+    width: 154px;
+    top:0px;
+    left: 0px;
+    opacity: 0;
+}
+
+.wrap-left .bor-left{
+	border: 1px solid #ccc;
+	-webkit-box-shadow: 0px 1px 5px #ccc;
+	-moz-box-shadow: 0px 1px 5px #ccc;
+	box-shadow: 0px 1px 5px #ccc;
+}
+.wrap-left .bor-left img{
+	border:5px solid #fff;
+	width: 100%;
+}
+
+.wrap-left .li-re {
+	margin: 15px 0;
+	text-align: center;
+}
+.wrap-right-item .edit-calen a,
+.wrap-left .li-re a{
+	font-size: 12px;
+}
+.wrap-right-item .edit-calen a:hover,
+.wrap-left .li-re a:hover{
+	text-decoration: underline;
+	color:#398fd1;
+}
+.wrap-right-item span{
+	vertical-align: top;
+	margin-top:20px;
+	font-size: 24px; 
+	color: #ccc;
+}
+.wrap-right-item .edit-calen h3{
+	font-size: 18px;
+	font-weight: 600;
+	color:#666666;
+}
+
+
